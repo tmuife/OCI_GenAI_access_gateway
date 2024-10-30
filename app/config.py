@@ -8,8 +8,8 @@ API_ROUTE_PREFIX = "/v1"
 
 # AUTH_TYPE can be "API_KEY" or "INSTANCE_PRINCIPAL"
 AUTH_TYPE="API_KEY"
-OCI_CONFIG_FILE = "~/.oci/config"
-OCI_CONFIG_FILE_KEY = "DEFAULT"
+OCI_CONFIG_FILE = "/app/config"
+OCI_CONFIG_FILE_KEY = "GENERATEAI"
 INFERENCE_ENDPOINT_TEMPLATE = "https://inference.generativeai.{region}.oci.oraclecloud.com/20231130"
 
 

@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+  admin_dev:
+    image: tmuife/gateway:dev
+    container_name: oci_gateway
+    ports:
+      - "3000:8088"
+    volumes:
+      - /home/ubuntu/.oci/oci_api_key.pem:/app/oci_api_key.pem
+    environment:
+      DB_HOST: ${DB_HOST:-10.0.0.15}
+      DB_NAME: ${DB_NAME:-jinsh}
+      DB_PASS: ${DB_PASS:-}
+      DB_USER: ${DB_USER:-jinsh}
+      DB_PORT: ${DB_PORT:-3307}
+    restart: always
+    networks:
+      - gateway-network
+
+networks:
+  admin-network:
+    driver: bridge

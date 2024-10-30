@@ -1,0 +1,7 @@
+[GENERATEAI]
+user=ocid1.user.oc1..aaaaaaaa4y6lh66zra6qioypgl66jrh3fkurgn242dp6efkwrfjny3jwyywa
+fingerprint=b2:94:8a:83:dd:52:14:e5:1a:1a:54:ab:bb:29:bf:bb
+tenancy=ocid1.tenancy.oc1..aaaaaaaaro7aox2fclu4urtpgsbacnrmjv46e7n4fw3sc2wbq24l7dzf3kba
+region=us-chicago-1
+key_file=/app/oci_api_key.pem
+compartment_id=ocid1.compartment.oc1..aaaaaaaaru3gkwxdbrs677wjoixqzjpogkjci6t75nvvwk54ee6lsjta7puq
