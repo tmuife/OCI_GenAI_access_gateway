@@ -1,0 +1,20 @@
+name: oci_gateway
+services:
+  admin_dev:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    ports:
+      - "3000:8088"
+    restart: always
+    networks:
+      - oci_gateway-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "2m"
+        max-file: "2"
+
+networks:
+  oci_gateway-network:
+    driver: bridge

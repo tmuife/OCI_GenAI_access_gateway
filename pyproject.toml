@@ -1,0 +1,45 @@
+[tool.poetry]
+package-mode = false
+name = "oci_generative_ai_gateway"
+version = "0.1.0"
+description = "oci_generative_ai_gateway"
+authors = ["Walter <jinshuhaicc@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "0.111.0"
+pydantic = "^2.7.1"
+uvicorn = "^0.29.0"
+tiktoken = "^0.6.0"
+requests = "^2.32.3"
+numpy = "^1.26.4"
+oci = "^2.129.4"
+pyyaml = "^6.0.2"
+sseclient-py = "^1.8.0"
+
+
+[tool.black]
+line-length = 120
+target-version = ["py310", "py311"]
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+[tool.ruff]
+line-length = 120
+extend-select = [
+  # "I",    # isort
+#   "B",    # flake8-bugbear
+#   "C4",   # flake8-comprehensions
+#   "PGH",  # pygrep-hooks
+  # "RUF",  # ruff
+#   "W",    # pycodestyle
+#   "YTT",  # flake8-2020
+]
+ignore = [
+    "F403",
+    "F405",
+]
